@@ -11,7 +11,7 @@ app.use(cookieParser());
 let port = process.env.PORT || 4000
 
 app.use(express.json())
-app.use("/api", authRouter);
+app.use("/api/auth", authRouter);
 
 app.listen(port, () => {
     connectDB();
